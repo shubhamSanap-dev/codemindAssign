@@ -1,0 +1,15 @@
+<div class="background-image">
+  <div class="search-container">
+    <h1>RecipeLib</h1>
+    <input
+      type="text"
+      placeholder="Search for recipes..."
+      [(ngModel)]="searchText"
+      class="search-input"
+    />
+
+    <button [disabled]="!searchText" (click)="search()" class="search-button">
+      Search
+    </button>
+  </div>
+</div>
